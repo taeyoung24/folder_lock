@@ -1,10 +1,10 @@
 import os, itertools, time
 
 char_range = '0123456789'
-password = '1024'
+pw_len = 4
 failed_str = '땡'
 
-pw_len = len(password)
+
 per = list(itertools.product(char_range[:], repeat=pw_len))
 
 parent_path = 'Outputs/' + str(time.time() * 1000).split('.')[0] + '/'
